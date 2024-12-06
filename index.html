@@ -115,6 +115,57 @@
         </table>
     </section>
 
+
+    <h1>Formulario de Contacto</h1>
+
+    <!-- Sección de formulario de contacto -->
+    <section id="formulario-contacto">
+        <h2>Contacto</h2>
+        <form id="contacto-form" action="#" method="POST" onsubmit="return validarFormulario()">
+            
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Campo para seleccionar el motivo del contacto -->
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo" required>
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="queja">Queja</option>
+            </select>
+
+            <!-- Campo para el correo electrónico -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Script de JavaScript para la validación del formulario -->
+    <script>
+        // Función de validación del formulario
+        function validarFormulario() {
+            // Obtener los valores de los campos
+            var nombre = document.getElementById('nombre').value;
+            var email = document.getElementById('email').value;
+
+            // Verificar si los campos no están vacíos
+            if (nombre === "" || email === "") {
+                alert("Por favor, complete todos los campos.");
+                return false; // Impide el envío del formulario si los campos están vacíos
+            }
+
+            // Mensaje de éxito cuando el formulario es válido
+            alert("Formulario enviado con éxito.");
+            return true; // Permite el envío del formulario
+        }
+    </script>
+
+
+
 </body>
 
 </html>

@@ -1,3 +1,107 @@
-img{
-    width: 100px;
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+/* Título principal */
+#titulo-principal {
+    text-align: center;
+    font-size: 2.5em;
+    color: red;
+    margin-bottom: 20px;
+    
+}
+
+/* Estilo para las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Estilo para los subtítulos */
+.subtitulo {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+.descripcion {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen de perfil */
+#foto-perfil {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+/* Estilo para las listas de enlaces de redes sociales */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 5px 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #6c5ce7;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4e2de2;
+}
+
+/* Estilo para las listas de pasatiempos y tareas */
+.lista-pasatiempos, .lista-tareas {
+    padding-left: 20px;
+}
+
+.lista-pasatiempos li, .lista-tareas li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilo para la tabla de horario semanal */
+.tabla-horario {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.tabla-horario th, .tabla-horario td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabla-horario th {
+    background-color: #6c5ce7;
+    color: white;
+}
+
+.tabla-horario tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-horario tr:hover {
+    background-color: #f1f1f1;
 }

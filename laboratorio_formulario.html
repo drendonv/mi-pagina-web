@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio_Formulario</title>
+   
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: beige;
+            border-radius: 8px;
+        }
+
+        h1{
+            text-align: center;
+            color: blue;
+        }
+
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight:bold ;
+        }
+      
+
+        input, textarea, select{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+
+        input[type="submit"] {
+            background-color: chartreuse;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        input[type="submit"]:hover {
+
+            background-color: blue;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>Formulario de Contacto </h1>
+        
+        <form action="#"   >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"  name="nombre" required>
+          
+            <label for="email">Correo Electronico:</label>
+            <input type="email"   id="email"  name="email" required>
+           
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono"  name="telefono">
+            
+            <label for="Mensaje">Mensaje:</label>
+            <textarea name="Mensaje" id="Mensaje"></textarea>
+
+            <label for="pais">Pais:</label>
+            <select name="pais" id="pais">
+            <option value="">selecciona tu Pais</option>
+            <option value="es">España</option>
+            <option value="mx">Mexico</option>
+            <option value="co">Colombia</option>
+            <option value="ar">Argentina</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+       
+       
+        </form>
+    </div>
+    
+   
+</body>
+</html>
